@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <title>استعلام قیمت</title>
+</head>
+
+<body>
+    <section>
+        <div class="depart flex">
+            <label class="label" for="departure">مبدأ</label>
+            <select id="departProv" class="select" name="departure" disabled>
+                <option value="">انتخاب استان</option>
+            </select class="select">
+            <select id="departCity" class="select" disabled>
+                <option value="">انتخاب شهر</option>
+            </select>
+        </div>
+        <div class="destin flex">
+            <label class="label" for="destination">مقصد</label>
+            <select id="destinProv" class="select" name="destination" disabled>
+                <option value="">انتخاب استان</option>
+            </select>
+            <select id="destinCity" class="select" disabled>
+                <option value="">انتخاب شهر</option>
+            </select>
+        </div>
+        <div class="flex">
+            <label class="label" for="car">خودرو</label>
+            <select id="vehicles" class="select" name="car" disabled>
+                <option value="">انتخاب خودرو</option>
+            </select>
+            <button id="btn" class="select">محاسبه</button>
+        </div>
+    </section>
+    <div class="result">
+        <div><span>کف تعرفه: </span><span id="min">۰</span></div>
+        <div><span>سقف تعرفه: </span><span id="max">۰</span></div>
+        <div><span>میانگین تعرفه: </span><span id="price">۰</span></div>
+    </div>
+</body>
+
+</html>
